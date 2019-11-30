@@ -12,4 +12,11 @@ var inscritosCursoTypescript = 100;
 // Type: Number, hexadecimales
 var hexadecimal = 0xf00d;
 console.log('hexadecimal', hexadecimal);
-var binario;
+var decimal = 10;
+console.log('decimal', decimal);
+// Type: Number, binario
+var binario = 9;
+-console.log('binario', binario);
+// Type: Number, octal
+var octal = 493;
+console.log('octal', octal);

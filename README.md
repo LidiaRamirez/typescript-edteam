@@ -1,5 +1,14 @@
 # TypeScript
 
+Es un lenguaje de programación orientado en javascript open source, desarrollado por Microsoft. Permite trabajar con tipos de datos primitivos.
+Permite utilizar las últimas características de JS ya que se traspila para tener compatibilidad con todos los navegadpres, por lo que TypeScript necesita ser compilado.
+
+## ¿Por qué usar TypeScript?
+
+- Orientado a Objetos (Clases, Objetos, Encapsulación, Polimorfismo)
+- Soporte de ES5, ES6 y más.
+- Se puede utilizar en angular (frontend), node (backend)
+
 ## Primeros pasos
 
 ### Instalación
@@ -17,26 +26,23 @@ tsc --version
 tsc nombre-archivo.ts
 ~~~
 
-Lo que realiza es convertir el archivo .ts a uno .js
+Lo que realiza es convertir el archivo con extensión de .ts a .js
+
+Para ejecutar el archivo, desde consola: `node archivo.js`
 
 ## Archivo tsconfig
 
-- Es archivo JSON
-- Su presencia indica que el directorio es la raíz de un proyecto TypeScript
-- Permite configurar opciones para el compilador
-- Especifica los archivos principales y cuales se pueden excluir
+Es JSON que especifica los archivos que se van a incluir o excluir para compilar, también permite configurar opciones para el compilador como por ejemplo el *'target': 'es5'* que genera archivos compatibles con es5
 
-### Generación
+### Generación de tsconfig.json
 
 ~~~
 tsc --init
 ~~~
 
-Se crea el archivo **tsconfig.json**, tiene configuraciones como el 'target': 'es5' que permite generar archivos compatibles con es5
-
 ### Compilación automática
 
-Para un archivo:
+Para un archivo typescript:
 
 ~~~
 tsc --watch nombre-archivo.ts
@@ -48,9 +54,9 @@ Para una carpeta, se tiene que estar en el directorio y escribir:
 tsc --watch 
 ~~~
 
-## Opciones para personalizar
+### Opciones para personalizar tsconfig
 
-### include
+#### include
 
 Permite incluir archivos que serán compilados. Ej:
 
@@ -68,8 +74,7 @@ Si se quiere compilar carpetas internas
   ]
 ~~~
 
-
-### exclude
+#### exclude
 
 Permite excluir archivos que no serían compilados. Ej:
 ~~~
@@ -85,7 +90,7 @@ Para excluir archivos con *-test'*
   ]
 ~~~
 
-### redirección para los js generados
+#### redirección para los js generados
 
 ~~~
 "compilerOptions": {
@@ -93,9 +98,10 @@ Para excluir archivos con *-test'*
 }
 ~~~
 
-## Tipos primitivos o tipos básicos
 
-Existen dos formas, la primera asignando a la variable el valor y automáticamente el tipo es inferido y la segunda forma es asignarle. Ej:
+## Tipos de datos
+
+Existen dos formas para asignar el tipo de datos, la primera asignando a la variable el valor y automáticamente el tipo es inferido y la segunda forma es asignarle. Ej:
 
 ~~~
 let estaInscrito: boolean;

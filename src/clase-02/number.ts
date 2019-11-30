@@ -17,4 +17,13 @@ let inscritosCursoTypescript: number = 100;
 let hexadecimal: number = 0xf00d;
 console.log('hexadecimal', hexadecimal);
 
-let binario
+let decimal: number = 10;
+console.log('decimal', decimal);
+
+// Type: Number, binario
+let binario: number = 0b1001;-
+console.log('binario', binario)
+
+// Type: Number, octal
+let octal: number = 0o755;
+console.log('octal', octal)
