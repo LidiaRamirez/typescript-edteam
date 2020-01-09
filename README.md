@@ -1,7 +1,7 @@
 # TypeScript
 
 Es un lenguaje de programación orientado en javascript open source, desarrollado por Microsoft. Permite trabajar con tipos de datos primitivos.
-Permite utilizar las últimas características de JS ya que se traspila para tener compatibilidad con todos los navegadpres, por lo que TypeScript necesita ser compilado.
+Permite utilizar las últimas características de JS ya que se traspila para tener compatibilidad con todos los navegadores, por lo que TypeScript necesita ser compilado.
 
 ## ¿Por qué usar TypeScript?
 
@@ -101,8 +101,65 @@ Para excluir archivos con *-test'*
 
 ## Tipos de datos
 
-Existen dos formas para asignar el tipo de datos, la primera asignando a la variable el valor y automáticamente el tipo es inferido y la segunda forma es asignarle. Ej:
 
+Existen dos formas para asignar el tipo de datos, la primera asignando a la variable el valor y automáticamente el tipo es inferido y la segunda forma es asignarle el tipo de dato. Ej:
+
+
+
+###  Tipos primitivos
+
+#### Boolean
+
+Forma inferido:
+~~~
+let estaConectado = true;
+~~~
+Forma explicita 
 ~~~
 let estaInscrito: boolean;
+~~~
+
+#### Number
+Ejemplo:
+~~~
+let estudiantes = 20;
+let estudiantes = '100' // inválido
+let cantidadEstudiantes: number = 25; 
+function getCantidadEstudiantes(): number { return 130; }
+~~~
+
+#### Cadena de texto
+~~~
+let nombre = 'José'; 
+let apellido: string = 'Perez';
+let nombreCompleto = nombre + ' ' + apellido;
+let nombreCompleto2 = `${nombre} ${apellido}`;
+~~~
+
+#### Parametro opcionales ( ? )
+
+function saludo(nombre?: string): string { return 'Hola'; }
+
+#### Arreglos
+~~~
+let cursos: string = ['TS' 'JS'];
+~~~
+
+#### Arreglos con Generics
+~~~
+let nombres: Array<string>;
+nombres = ['TS' 'JS'];
+~~~
+
+#### Arreglos de cualquier tipo
+~~~
+let arreglo: any[] = [2, 'cadena', true];
+~~~
+
+#### Tuplas
+
+~~~
+let infoCursos: [string, number] = ['TS', 20];
+infoCursos = [20, 'TS'] // incorrecto
+console.log(infoCursos[1]) // Para acceder al valor
 ~~~
