@@ -163,3 +163,72 @@ let infoCursos: [string, number] = ['TS', 20];
 infoCursos = [20, 'TS'] // incorrecto
 console.log(infoCursos[1]) // Para acceder al valor
 ~~~
+
+#### Alias
+~~~
+let cursoNuevo: string | number;
+cursoNuevo = 'JS';
+cursoNuevo = 2
+~~~
+
+Como tipo de dato personalizado
+~~~
+type Curso = string | number;
+let cursos = Curso[] = ['TS', 'JS'];
+function getCurso() : Curso {}
+~~~
+
+#### Aserciones de Tipos de datos
+Para asegurarse que el valor que se le asigna es el adecuado. Ej
+~~~
+let codigoCurso: any = 10;
+let numeroCurso: number = <number> codigoCurso; // Con <number> se asegura
+~~~
+Otro Ej. 
+~~~
+let estudiante: {nombre: string, curso: string}; // variable personalizada con estructura definida
+estudiante.nombre = 'Jose';
+estudiante.curso = 'JS';
+type Estudiante  = {nombre: string, curso: string}; // tipo que se puede reutilizar
+let estudiante2 = <Estudiante> {};
+~~~
+
+#### Enumerados
+Define conjunto de valores por defecto 
+~~~
+enum Curso { JS, TS, CSS }
+let curso: Curso = Curso.JS; // devuelve 0, posición
+let cursoString = Curso[curso]; // devuelve el valor en posición 0
+~~~
+
+Otro ejemplo, seria asignarle un valor de posición por defecto 
+~~~
+enum FinSemana {
+  Sabado = 5,
+  Domingo
+}
+~~~
+
+Otro ejemplo es asignarle un valor 
+~~~
+enum FinSemana {
+  Sabado = 'sab',
+  Domingo = 'dom',
+}
+~~~
+
+#### Interfaces
+Agrupador de tipos de datos
+
+~~~
+interface ICurso {
+  nombre: string;
+  id: number
+}
+
+let cursoTS: ICurso = {
+  nombre: 'TS',
+  id: 1
+}
+
+~~~
