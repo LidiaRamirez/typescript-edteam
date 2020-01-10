@@ -232,3 +232,15 @@ let cursoTS: ICurso = {
 }
 
 ~~~
+
+##### Herencia de interfaces
+
+~~~
+interface CursoEDteam extends ICurso { costo: number; }
+const primerCurso: CursoEDteam = {
+  nombre: 'TS desde cero',
+  id: 200,
+  costo: 100
+}
+~~~
+
