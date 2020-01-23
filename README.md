@@ -46,6 +46,7 @@ Para un archivo typescript:
 
 ~~~
 tsc --watch nombre-archivo.ts
+tsc nombre-archivo -w
 ~~~
 
 Para una carpeta, se tiene que estar en el directorio y escribir: 
