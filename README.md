@@ -143,12 +143,12 @@ function saludo(nombre?: string): string { return 'Hola'; }
 
 #### Arreglos
 ~~~
-let cursos: string = ['TS' 'JS'];
+let cursos: string[] = ['TS' 'JS'];
 ~~~
 
 #### Arreglos con Generics
 ~~~
-let nombres: Array<string>;
+let cursos: Array<string>;
 nombres = ['TS' 'JS'];
 ~~~
 
@@ -218,6 +218,8 @@ enum FinSemana {
 }
 ~~~
 
+// console.log(FinSemana.Sabado) retorna sab
+
 #### Interfaces
 Agrupador de tipos de datos
 
@@ -232,6 +234,19 @@ let cursoTS: ICurso = {
   id: 1
 }
 
+~~~
+
+Asi mismo se puede agregar una propiedad como no necesaria
+
+~~~
+interface ICurso {
+  nombre: string;
+  id?: number
+}
+
+let cursoTS2: ICurso = {
+  nombre: 'TS',
+}
 ~~~
 
 ##### Herencia de interfaces
