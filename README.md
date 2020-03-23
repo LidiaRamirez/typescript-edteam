@@ -1,9 +1,22 @@
 # TypeScript
 
+[https://ed.team/cursos/typescript](https://ed.team/cursos/typescript)
+
+## Tabla de contenidos
+
+1. [Introducción a TypeScript](#Introducción a TypeScript)
+  - [Definición](#Definición)
+  - [Compilar archivos typescript](Compilar-archivos-typescript)
+2. [Tipos de datos](#Tipos-de-datos)
+3.
+
+## Introducción a TypeScript
+
+### Definición
 Es un lenguaje de programación orientado en javascript open source, desarrollado por Microsoft. Permite trabajar con tipos de datos primitivos.
 Permite utilizar las últimas características de JS ya que se traspila para tener compatibilidad con todos los navegadores, por lo que TypeScript necesita ser compilado.
 
-## ¿Por qué usar TypeScript?
+### ¿Por qué usar TypeScript?
 
 - Orientado a Objetos (Clases, Objetos, Encapsulación, Polimorfismo)
 - Soporte de ES5, ES6 y más.
