@@ -4,11 +4,18 @@
 
 ## Tabla de contenidos
 
-1. [Introducción a TypeScript](#Introduccion-a-TypeScript)
+1. [Introducción a TypeScript](#Introducción-a-TypeScript)
     - [Definición](#Definición)
     - [Compilar archivos typescript](#Compilar-archivos-typescript)
 2. [Tipos de datos](#Tipos-de-datos)
-3.
+    - [Tipos primitivos](#Tipos-primitivos)
+    - [Parametro opcional](#Parametro-opcional)
+    - [Arreglos con Generics](#Arreglos-con-Generics)
+    - [Aserciones de Tipos de datos](#Aserciones-de-Tipos-de-datos)
+    - [Enumerados](#Enumerados)
+    - [Interfaces](#Interfaces)
+    - [Herencia de interfaces](Herencia-de-interfaces)
+
 
 ## Introducción a TypeScript
 
@@ -150,7 +157,7 @@ let nombreCompleto = nombre + ' ' + apellido;
 let nombreCompleto2 = `${nombre} ${apellido}`;
 ~~~
 
-#### Parametro opcionales ( ? )
+#### Parametro opcional ( ? )
 
 function saludo(nombre?: string): string { return 'Hola'; }
 
