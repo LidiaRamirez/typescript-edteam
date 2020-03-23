@@ -14,7 +14,7 @@
     - [Aserciones de Tipos de datos](#Aserciones-de-Tipos-de-datos)
     - [Enumerados](#Enumerados)
     - [Interfaces](#Interfaces)
-    - [Herencia de interfaces](Herencia-de-interfaces)
+    - [Herencia de interfaces](#Herencia-de-interfaces)
 
 
 ## Introducción a TypeScript
