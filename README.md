@@ -2,7 +2,7 @@
 
 [https://ed.team/cursos/typescript](https://ed.team/cursos/typescript)
 
-## Tabla de contenidos
+## Tabla de contenido
 
 1. [Introducción a TypeScript](#Introducción-a-TypeScript)
     - [Definición](#Definición)
@@ -15,6 +15,7 @@
     - [Enumerados](#Enumerados)
     - [Interfaces](#Interfaces)
     - [Herencia de interfaces](#Herencia-de-interfaces)
+3. POO en TypeScript
 
 
 ## Introducción a TypeScript
@@ -279,4 +280,28 @@ const primerCurso: CursoEDteam = {
   costo: 100
 }
 ~~~
+
+## POO en TypeScript
+
+### Clases y constructores 
+
+Ej:
+~~~
+class EscuelaDigital {
+  // Atributos
+  nombre: string;
+  cursos: string[] = [];
+  
+  // Funcion que nos permite crear objetos
+  constructor(nombre: string) {
+    this.nombre = nombre;
+  }
+  
+  agregarCurso(curso: string) {
+    this.cursos.push(curso);
+  }
+}
+~~~
+
+**Nota:** Cuando se define `void` en una función se interpreta como que no tiene retorno
 
