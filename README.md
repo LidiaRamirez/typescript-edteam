@@ -5,8 +5,8 @@
 ## Tabla de contenidos
 
 1. [Introducción a TypeScript](#Introduccion-a-TypeScript)
-  - [Definición](#Definición)
-  - [Compilar archivos typescript](#Compilar-archivos-typescript)
+    - [Definición](#Definición)
+    - [Compilar archivos typescript](#Compilar-archivos-typescript)
 2. [Tipos de datos](#Tipos-de-datos)
 3.
 
