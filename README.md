@@ -16,6 +16,8 @@
     - [Interfaces](#Interfaces)
     - [Herencia de interfaces](#Herencia-de-interfaces)
 3. POO en TypeScript
+    - [Clases y constructores] (#Clases-y-constructores)
+    - [Miembros públicos , privados y protegidos] (#Miembros-públicos-,-privados-y-protegidos)
 
 
 ## Introducción a TypeScript
@@ -301,7 +303,16 @@ class EscuelaDigital {
     this.cursos.push(curso);
   }
 }
+
+const escuela = new EscuelaDigital('EDteam');
+escuela.agregarCurso('JS');
 ~~~
 
 **Nota:** Cuando se define `void` en una función se interpreta como que no tiene retorno
+
+### Miembros públicos , privados y protegidos
+
+
+
+
 
