@@ -17,7 +17,7 @@
     - [Herencia de interfaces](#Herencia-de-interfaces)
 3. [POO en TypeScript](#POO-en-TypeScript)
     - [Clases y constructores](#Clases-y-constructores)
-    - [Miembros públicos , privados y protegidos](#Miembros-públicos-,-privados-y-protegidos)
+    - [Miembros públicos , privados y protegidos](#miembros-públicos--privados-y-protegidos)
 
 
 ## Introducción a TypeScript
